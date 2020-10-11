@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lists_all_users"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6FAE7"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="0.45"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:src="@drawable/avatar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="28sp"
+            tools:text="Alcemedis Keogray" />
+
+        <TextView
+            android:id="@+id/userStatus"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="start"
+            android:text="@string/default_status"
+            android:textAlignment="viewStart"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
